@@ -1,19 +1,22 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 import { reset } from 'styled-reset'
 
+const Container = styled.div`
+    width : 1194px ;
+    margin : 0 auto ;
+` ;
+
 const GlobalStyle = createGlobalStyle`
+    /* style reset */
     ${reset}
 
+    /* Basic Style */
     body { 
-        width : 100% ;
         background-color : #FAFAFA ; 
     }
 
-    .wrap {
-        width : 1194px ;
-        margin : 0 auto ;
-
-        background-color : #eeeeee ;
+    #wrap {
+        width : 100% ;
     }
 
     a {
@@ -21,6 +24,16 @@ const GlobalStyle = createGlobalStyle`
         text-decoration : none ;
     }
 
+    .draggable {
+        -webkit-user-select : text ;
+        -moz-user-select : text ;
+        -ms-user-select : text ;
+        user-select : text ;
+    }
+
 ` ;
 
-export default GlobalStyle
+export { 
+    GlobalStyle,
+    Container
+} ;

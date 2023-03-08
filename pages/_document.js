@@ -1,11 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-
-import Header from 'common/Header'
-import Footer from 'common/Footer'
-
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
+  // Add style-components to next.js and start using it
   static async getInitialProps(
     ctx
   ) {
@@ -37,15 +34,17 @@ export default class MyDocument extends Document {
     }
   }
 
+  // Document template
   render() {
     return (
-        <Html lang="en">
-        <Head />
+      <Html lang="en">
+        {/* Meta Data */}
+        <Head>
+        </Head>
         <body>
-          <div className="wrap">
-            <Header />
+          <div id="wrap">
+            {/* Pages rendering */}
             <Main />
-            <Footer />
           </div>
           <NextScript />
         </body>
