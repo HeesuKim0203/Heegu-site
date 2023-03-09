@@ -3,9 +3,9 @@ import Head from 'next/head'
 import Header from 'common/Header'
 import Footer from 'common/Footer'
 
-import HomeContents from 'common/HomeContents'
+import Home from 'common/Home'
 
-export default function Home() {
+export default function Index() {
   return (
     <>
       {/* Meta Data */}
@@ -14,7 +14,7 @@ export default function Home() {
       {/* Pages rendering -> Main Object */}
       <main>
         <Header />
-        <HomeContents />
+        <Home />
         <Footer />
       </main>
     </>

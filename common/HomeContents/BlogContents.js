@@ -1,15 +1,9 @@
-import { 
-
-    blogTitle
-
-} from 'util/text'
-
+import { blogTitle } from 'util/text'
+import TitleComponent from 'common/HomeContents/Components/TitleComponent'
 import { 
 
     BlogContainer,
     Blog,
-    BlogTitleContainer,
-    BlogTitle,
 
 } from 'styles/HomeStyle'
 
@@ -17,9 +11,7 @@ function BlogContents(props) {
     return (
         <BlogContainer>
             <Blog>
-                <BlogTitleContainer>
-                    <BlogTitle>{ blogTitle }</BlogTitle>
-                </BlogTitleContainer>
+                <TitleComponent title = { blogTitle }/>
             </Blog>
         </BlogContainer>
     );

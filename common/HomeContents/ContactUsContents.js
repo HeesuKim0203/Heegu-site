@@ -1,15 +1,9 @@
-import { 
-
-    contactUsTitle
-
-} from 'util/text'
-
+import { contactUsTitle } from 'util/text'
+import TitleComponent from 'common/HomeContents/Components/TitleComponent'
 import { 
 
     ContactUsContainer,
     ContactUs,
-    ContactUsTitleContainer,
-    ContactUsTitle,
 
 } from 'styles/HomeStyle'
 
@@ -17,9 +11,7 @@ function ContactUsContents(props) {
     return (
         <ContactUsContainer>
             <ContactUs>
-                <ContactUsTitleContainer>
-                    <ContactUsTitle>{ contactUsTitle }</ContactUsTitle>
-                </ContactUsTitleContainer>
+                <TitleComponent title = { contactUsTitle } />
             </ContactUs>
         </ContactUsContainer>
     );
